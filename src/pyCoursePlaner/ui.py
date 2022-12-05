@@ -12,7 +12,7 @@ def scroll_bar_init(root):
 
     #scroll_content = Listbox(scroll_bar_widget, yscrollcommand  = scroll_bar.set)
     #scroll_content.insert(END, Label(scroll_content, bd=5, bg="black", height=5, width=5)) #without a listbox and instead ascrolable frame
-    scroll_content = Label(scroll_bar_widget, width = 15, height = 15)
+    scroll_content = Label(scroll_bar_widget, width = 1, height = 15)
     scroll_content.pack( side = LEFT, fill = BOTH )
     #scroll_bar.config( command = scroll_content.yview )
     scroll_bar_widget.pack(side=LEFT, fill=Y)
@@ -22,7 +22,7 @@ def scroll_bar_init(root):
 def planner_frame_init(root):
     planner_frame = Frame(root, bd=1, relief="solid")
     #planner_frame.pack(side=RIGHT, fill=BOTH)
-    define_dragable_locations(root=planner_frame, xpos=50, ypos=50, height=100, width=100, xnum=2, ynum=2,xpadding=5, ypadding=5)
+    define_dragable_locations(root=planner_frame, xpos=50, ypos=50, height=50, width=100, xnum=7, ynum=8,xpadding=5, ypadding=5)
     #planner_frame.grid(column=4,row=4)
     frame = Label(planner_frame, bd=5, bg="black", height=5, width=5)
     
