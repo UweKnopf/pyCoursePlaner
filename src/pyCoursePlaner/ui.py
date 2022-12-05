@@ -14,7 +14,7 @@ def scroll_bar_init(root):
     #scroll_content.insert(END, Label(scroll_content, bd=5, bg="black", height=5, width=5)) #without a listbox and instead ascrolable frame
     scroll_content = Label(scroll_bar_widget, width = 15, height = 15)
     scroll_content.pack( side = LEFT, fill = BOTH )
-    scroll_bar.config( command = scroll_content.yview )
+    #scroll_bar.config( command = scroll_content.yview )
     scroll_bar_widget.pack(side=LEFT, fill=Y)
     root.grid_rowconfigure(3, weight=1)
     root.grid_columnconfigure(3, weight=1)
